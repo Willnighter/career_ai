@@ -83,17 +83,17 @@ def analyze_career(skills, interests, goals, education_background, work_experien
 
     user_prompt = f"""基於以下資訊，請分析並推薦最適合的職涯與副業：
 
-**個人背景：**
-- 技能：{skills}
-- 興趣：{interests}
-- 職涯目標：{goals}
-- 教育背景：{education_background}
-- 工作經驗：{work_experience}
-- 語言能力：{languages}
-- 每週可用於副業的時數：{hours} 小時
-
-請遵循指定的 JSON 格式，進行加權分析（興趣佔 30%，技能佔 70%）。
-如果目標是「財富自由」，請幫我定義具體指標並給出實際可行的路徑。"""
+    **個人背景：**
+    - 技能：{skills}
+    - 興趣：{interests}
+    - 職涯目標：{goals}
+    - 教育背景：{education_background}
+    - 工作經驗：{work_experience}
+    - 語言能力：{languages}
+    - 每週可用於副業的時數：{hours} 小時
+    
+    請遵循指定的 JSON 格式，進行加權分析（興趣佔 30%，技能佔 70%）。
+    如果目標是「財富自由」，請幫我定義具體指標並給出實際可行的路徑。"""
 
     try:
         response = client.chat.completions.create(
