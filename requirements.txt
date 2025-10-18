@@ -1,7 +1,14 @@
-# Core
-streamlit>=1.28.0
-openai>=1.3.0
+# === 核心套件 ===
+streamlit==1.29.0
+openai==1.3.0
 
-# Optional (如果需要其他功能)
-pandas>=2.0.0
-plotly>=5.18.0
+# === 工具套件 ===
+python-dateutil==2.8.2
+
+# === 如果你之後需要數據處理 ===
+# pandas==2.1.0
+# numpy==1.24.0
+
+# === 如果你需要視覺化 ===
+# plotly==5.18.0
+# altair==5.1.0
