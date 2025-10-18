@@ -6,9 +6,10 @@ from openai import OpenAI
 
 # ===== 初始化 OpenAI =====
 try:
-    client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
+    api_key = st.secrets["OPENAI_API_KEY"]
+    client = OpenAI(api_key=api_key)
 except KeyError:
-    st.error("⚠️ 請在 .streamlit/secrets.toml 設定 OPENAI_API_KEY")
+    st.error("⚠️ 找不到 OPENAI_API_KEY。\n請在 Streamlit Cloud 的 Secrets Manager 或 `.streamlit/secrets.toml` 設定它。")
     st.stop()
 
 def analyze_career(skills, interests, goals, education_background, work_experience,
