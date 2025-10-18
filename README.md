@@ -52,10 +52,23 @@ streamlit run app.py
 
 ## ⚠️ 使用限制
 
-1. **API Key 安全**：請勿將 API key 上傳到 GitHub
-2. **服務條款**：需遵守 [OpenAI 使用政策](https://openai.com/policies/usage-policies)
-3. **免責聲明**：本工具僅供參考，不構成專業建議
+本專案使用 OpenAI API，使用前請注意：
 
+1. **API Key 安全**：請勿將 API key 上傳到 GitHub
+2. **使用成本**：OpenAI API 按用量計費
+3. **服務條款**：需遵守 [OpenAI 使用政策](https://openai.com/policies/usage-policies)
+4. **內容政策**：
+   - 不得用於非法用途
+   - 不得生成有害內容
+   - 需遵守數據隱私法規
+
+## 免責聲明
+
+本工具僅供參考，不構成專業職涯建議。使用者需自行判斷建議的適用性。
+開發者不對使用本工具產生的任何決策負責。
+
+AI 生成的內容可能不準確，請謹慎評估。
+```
 ## 📝 License
 
 本專案採用 [MIT License](LICENSE)。
