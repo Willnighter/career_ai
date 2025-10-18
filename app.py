@@ -5,6 +5,7 @@ from datetime import datetime
 from openai import OpenAI
 
 # ===== 初始化 OpenAI =====
+st.write("🔍 Secrets keys:", list(st.secrets.keys()))
 try:
     api_key = st.secrets["OPENAI_API_KEY"]
     client = OpenAI(api_key=api_key)
