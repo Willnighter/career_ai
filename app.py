@@ -104,7 +104,7 @@ def analyze_career(skills, interests, goals, education_background, work_experien
             ],
             temperature=0.7,
             max_tokens=1200,  
-            response_format={"type": "json_object"}  # 強制 JSON 格式
+            #response_format={"type": "json_object"}  # 強制 JSON 格式
         )
         
         result = json.loads(response.choices[0].message.content)
