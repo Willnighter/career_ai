@@ -79,7 +79,7 @@ AI 生成的內容可能不準確，請謹慎評估。
 
 ## 📧 聯絡
 
-有問題？請開 [Issue](https://github.com/will_reginald/career-advisor/issues)
+有問題？請開 [Issue](https://github.com/willnighter/career-advisor/issues)
 
 ---
 
