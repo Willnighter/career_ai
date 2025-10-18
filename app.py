@@ -5,10 +5,11 @@ from datetime import datetime
 from openai import OpenAI
 
 # ===== 初始化 OpenAI =====
-st.write("🔍 Secrets keys:", list(st.secrets.keys()))
+
 try:
     api_key = st.secrets["OPENAI_API_KEY"]
     client = OpenAI(api_key=api_key)
+    st.write("✅ 成功初始化 OpenAI client")
 except KeyError:
     st.error("⚠️ 找不到 OPENAI_API_KEY。\n請在 Streamlit Cloud 的 Secrets Manager 或 `.streamlit/secrets.toml` 設定它。")
     st.stop()
