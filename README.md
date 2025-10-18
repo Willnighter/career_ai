@@ -24,7 +24,7 @@
 
 1. Clone 專案
 ```bash
-git clone https://github.com/will_reginald/career-ai.git
+git clone https://github.com/willnighter/career-ai.git
 cd career-advisor
 ```
 
